@@ -1,0 +1,273 @@
+body {
+  background-color: #fdf6e3; 
+  font-family: "Roca", sans-serif;
+  margin-top: 15px;
+  margin-left: 56px;
+  margin-right: 56px;
+  color: #215732; 
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  background-color: #fdf6e3; 
+  position: relative;
+}
+
+.logo {
+  font-family: "Roca", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #215732; 
+}
+
+.navbar ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+  font-size: 16px;
+  color: #215732;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background-color: #ffc000; 
+  color: #215732;
+  outline: 1px solid #215732;
+}
+
+.tagline {
+  font-size: 128px;
+  color: #215732; 
+}
+
+.connectform {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  gap: 30px;
+}
+
+.connectform .name {
+  grid-row: 1;
+  grid-column: 1;
+  border-bottom: 0.1rem solid;
+}
+
+.connectform .email {
+  grid-row: 1;
+  grid-column: 2;
+  border-bottom: 0.1rem solid;
+}
+
+.connectform .subject {
+  grid-row: 1;
+  grid-column: 3;
+  border-bottom: 0.1rem solid;
+}
+
+.spacer {
+  height: 50px;
+}
+
+.textbox {
+  color: #9db4a7;
+  border: 0.1rem solid #215732;
+  grid-row: 2;
+  grid-column: 1 / 4;
+  padding: 10px;
+  height: auto;
+}
+
+.sendcontainer {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.connectform .sendmessage {
+  font-weight: bold;
+  font-size: 24px;
+  border-bottom: 0.1rem solid;
+  width: fit-content;
+}
+
+.footer > img {
+  max-width: 30%;
+  max-height: 30%;
+}
+
+.footer {
+  position: absolute;
+}
+
+.footertagline {
+  position: relative;
+  font-size: 34px;
+  top: 25vh;
+}
+
+.bottomline {
+  font-family: Fredoka, sans-serif;
+  position: relative;
+  top: 25vh;
+}
+
+.footerline {
+  position: relative;
+  border-bottom: 0.1rem solid;
+  top: 10vh;
+  opacity: 50%;
+}
+
+.flower1 {
+  position: relative;
+  left: 75%;
+  top: -20vh;
+}
+
+.flower2 {
+  position: relative;
+  left: 29%;
+  top: 0px;
+}
+
+.resume {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 3fr;
+  }
+  
+  .resume img {
+    grid-column: 1;
+    max-width: 100%;
+    width: 100%; 
+  }
+  
+  .btn1, .btn2 {
+    display: block; 
+    grid-column: 1; 
+    width: 85%; 
+    text-decoration: none;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: 1px solid #215732; 
+    color: #215732;
+    border-radius: 50px;
+    padding: 12px 24px;
+    margin: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn1:hover, .btn2:hover {
+    background-color: #FFBC5F; 
+    color: #215732; 
+    outline: 1px solid #215732; 
+    transition: background-color 0.3s ease;
+  }
+  
+
+.headings {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: "Roca", sans-serif;
+}
+
+.exppoint {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 0px;
+}
+
+.exppoint .position {
+  grid-column: 1;
+  font-weight: bold;
+}
+
+.exppoint .company {
+  grid-column: 1;
+}
+
+.exppoint .time {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.resume {
+  font-family: "Fredoka", sans-serif;
+}
+
+.postheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postheading > * {
+  display: inline-block;
+  align-content: center;
+}
+
+.middleline {
+  width: 50vw;
+  border: 0.1rem solid;
+  height: 0px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons > * {
+  display: inline-block;
+  max-width: fit-content;
+  border: 0.1rem solid;
+  margin: 15px;
+  padding: 5px 20px;
+  border-radius: 100px;
+
+}
+
+.postheadline {
+    font-family: 'Fredoka', sans-serif; 
+    font-size: 1.2rem; 
+    font-weight: 400; 
+    color: #215732; 
+    text-align: left; 
+    margin: 1rem 0; 
+  }
+  
+
+.postdescription {
+  font-family: Fredoka, sans-serif;
+  padding: 20px 0px;
+}
+
+.post img {
+    width: 100%; 
+    height: 500px;
+    object-fit: cover; 
+    border-radius: 50px; 
+  }
+  
+
+.externalink {
+    font-family: Fredoka, sans-serif; 
+}
+
+.postseparator {
+  border: 0.2rem solid;
+  height: 0px;
+  margin: 50px 0px;
+}
