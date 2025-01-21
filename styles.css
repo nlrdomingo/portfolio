@@ -163,7 +163,7 @@ body {
     transform: scale(1.05);
   }
 }
-/* Scale the entire craft card on hover */
+/* Craft card with smooth scaling effect */
 .craft-card {
   background-color: #ffffff;
   border-radius: 16px;
@@ -172,16 +172,17 @@ body {
   max-width: 1200px;
   margin: 2rem auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center; /* Ensures scaling from the center */
 }
 
-/* Hover effect for the whole card */
+/* Hover effect without movement */
 .craft-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px) scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Ensure image remains static while the card scales */
+/* Ensure the image remains static within the card */
 .craft-content {
   position: relative;
   width: 100%;
@@ -190,6 +191,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .craft-content img {
@@ -199,7 +201,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: none; /* Remove animation from the image itself */
+  transform-origin: center; /* Prevents shifting */
+  transition: none; /* Ensure image doesn't animate independently */
 }
 
 .craft-description {
