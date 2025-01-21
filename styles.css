@@ -179,6 +179,9 @@ body {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+.craft-card:hover .craft-content img {
+  transform: scale(1.1);
+}
 
 .craft-content {
   position: relative;
@@ -192,12 +195,12 @@ body {
 
 .craft-content img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
 
 .craft-description {
