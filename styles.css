@@ -163,6 +163,7 @@ body {
     transform: scale(1.05);
   }
 }
+/* Scale the entire craft card on hover */
 .craft-card {
   background-color: #ffffff;
   border-radius: 16px;
@@ -174,15 +175,13 @@ body {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Hover effect to scale up the card smoothly */
+/* Hover effect for the whole card */
 .craft-card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.craft-card:hover .craft-content img {
-  transform: scale(1.1);
-}
 
+/* Ensure image remains static while the card scales */
 .craft-content {
   position: relative;
   width: 100%;
@@ -200,7 +199,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  transition: none; /* Remove animation from the image itself */
 }
 
 .craft-description {
