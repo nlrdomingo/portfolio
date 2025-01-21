@@ -174,11 +174,19 @@ body {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Scale effect on hover */
+/* Hover effect to scale up the card smoothly */
 .craft-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  animation: scaleUp 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure images inside craft-content scale proportionally */
+.craft-content img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.craft-card:hover .craft-content img {
+  transform: scale(1.1);
 }
 
 .craft-content {
